@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>搭建指南 | 迦百农</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/docs/img/logo.jpg">
+    <meta name="description" content="愿每一个孩子都被温柔以待">
+    <link rel="preload" href="/docs/assets/css/0.styles.4180821e.css" as="style"><link rel="preload" href="/docs/assets/js/app.58dadd29.js" as="script"><link rel="preload" href="/docs/assets/js/2.ef83d025.js" as="script"><link rel="preload" href="/docs/assets/js/8.7d142624.js" as="script"><link rel="prefetch" href="/docs/assets/js/3.54550723.js"><link rel="prefetch" href="/docs/assets/js/4.f2c7fbe0.js"><link rel="prefetch" href="/docs/assets/js/5.5cf9bf65.js"><link rel="prefetch" href="/docs/assets/js/6.2aeb2cc9.js"><link rel="prefetch" href="/docs/assets/js/7.03b9628e.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.4180821e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><!----> <span class="site-name">迦百农</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  个人博客
+</a></div><div class="nav-item"><a href="/docs/baodian/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  搭建指南
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/guide/" class="nav-link">
+  个人博客
+</a></div><div class="nav-item"><a href="/docs/baodian/" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  搭建指南
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>搭建指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/baodian/#环境搭建" class="sidebar-link">环境搭建</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/docs/baodian/#安装初始化" class="sidebar-link">安装初始化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/baodian/#核心配置" class="sidebar-link">核心配置</a></li><li class="sidebar-sub-header"><a href="/docs/baodian/#运行" class="sidebar-link">运行</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="搭建指南"><a href="#搭建指南" class="header-anchor">#</a> 搭建指南</h1> <h2 id="环境搭建"><a href="#环境搭建" class="header-anchor">#</a> 环境搭建</h2> <ul><li>需要node环境和npm支持，如果不会安装npm请转到：<a href="https://www.npmjs.cn/getting-started/installing-node/" target="_blank" rel="noopener noreferrer">安装指引<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul> <h2 id="安装初始化"><a href="#安装初始化" class="header-anchor">#</a> 安装初始化</h2> <ul><li><p>全局安装</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">npm</span> <span class="token function">install</span> -g vuepress
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>创建个文件夹作为目录</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token function">mkdir</span> vuepress-blog
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></li> <li><p>项目初始化,初始化后会生成一个package.json文件</p></li> <li><p>在当前目录中创建一个docs目录</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">cd</span> vuepress-blog
+$ <span class="token function">npm</span> init -y
+$ <span class="token function">mkdir</span> docs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>首页内容书写</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>   ---
+ home: <span class="token boolean">true</span>
+ heroImage: /img/logo.jpg
+ actionText: 为生活加油 →
+ actionLink: /moulian/
+ features:
+ - title: 何以为家
+ details: 生而不养，何以为家。我要控告我的父母，因为他们生下了我。
+ - title: 赞恩.阿尔.拉菲亚
+ details: 我曾经以为我们长大了，就会变成好人，受人尊敬和爱戴。但是上帝不想让我们变成那样，他要我们当地毯，供人踩踏。
+ - title: 希望
+ details: 笑一个，赞恩，这张照片将用在你的身份证上，而不是死亡证明上。
+ footer: MIT Licensed <span class="token operator">|</span> Copyright © <span class="token number">2018</span>-present Evan You
+   ---
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div></li></ul> <h3 id="核心配置"><a href="#核心配置" class="header-anchor">#</a> 核心配置</h3> <ul><li><p>在docs目录下创建.vuepress目录</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">cd</span> docs
+$ <span class="token function">mkdir</span> .vuepress
+<span class="token comment"># 主要存放配置</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>新建总配置文件config.js</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ <span class="token builtin class-name">cd</span> .vuepress
+$ <span class="token function">touch</span> config.js
+<span class="token comment"># config是整个项目的核心配置文件，所有菜单、栏目相关的配置均配置在该模块中</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div></li> <li><p>在config.js中加入内容</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>module.exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  title: <span class="token string">'迦百农'</span>,
+  description: <span class="token string">'愿每一个孩子都被温柔以待'</span>,
+  head: <span class="token punctuation">[</span>
+      <span class="token punctuation">[</span><span class="token string">'link'</span>, <span class="token punctuation">{</span>rel: <span class="token string">'icon'</span>, href: <span class="token string">'/img/logo.jpg'</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+  <span class="token punctuation">]</span>,
+  markdown: <span class="token punctuation">{</span>
+      lineNumbers: <span class="token boolean">true</span>
+  <span class="token punctuation">}</span>,
+  themeConfig: <span class="token punctuation">{</span>
+      nav: require<span class="token punctuation">(</span><span class="token string">'./nav'</span><span class="token punctuation">)</span>,
+      sidebar: <span class="token string">'auto'</span>,
+      sidebar: <span class="token punctuation">{</span><span class="token string">'/guide/'</span>:<span class="token punctuation">[</span>
+          <span class="token punctuation">{</span>
+                title:<span class="token string">'新手指南'</span>,
+                collapsable: true,
+                children:<span class="token punctuation">[</span>
+                  <span class="token string">'/guide/notes/one'</span>,
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">}</span>,
+              <span class="token punctuation">{</span>
+                title:<span class="token string">'赞恩.阿尔.拉菲亚'</span>,
+                collapsable: true,
+                children:<span class="token punctuation">[</span>
+                  <span class="token string">'/guide/notes/two'</span>,
+                <span class="token punctuation">]</span>
+              <span class="token punctuation">}</span>
+          <span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>,
+      sidebarDepth: <span class="token number">2</span>,
+      lastUpdated: <span class="token string">'Last Updated'</span>,
+      searchMaxSuggestoins: <span class="token number">10</span>,
+      serviceWorker: <span class="token punctuation">{</span>
+          updatePopup: <span class="token punctuation">{</span>
+              message: <span class="token string">&quot;有新的内容.&quot;</span>,
+              buttonText: <span class="token string">'更新'</span>
+          <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span>,
+      editLinks: true,
+      editLinkText: <span class="token string">'在 GitHub 上编辑此页 ！'</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br></div></div></li></ul> <h3 id="运行"><a href="#运行" class="header-anchor">#</a> 运行</h3> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>  vuepress dev docs
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.58dadd29.js" defer></script><script src="/docs/assets/js/2.ef83d025.js" defer></script><script src="/docs/assets/js/8.7d142624.js" defer></script>
+  </body>
+</html>
